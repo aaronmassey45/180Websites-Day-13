@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Signika");
+.navbar {
+  padding: 15px;
+  border-radius: 0;
+}
+.GetMovie .row {
+  overflow: auto;
+  background-color: black;
+  color: white;
+  font-family: 'Signika', sans-serif;
+}
+
+.SearchBar {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.SearchBar input {
+  width: 80%;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.title {
+  font-size: 4em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.tagline {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.overview {
+  font-size: 1.2em;
+}
+
+.gold, .col-sm-6 .gold {
+  color: #D2B887;
+}
+
+.stuff {
+  padding: 10px;
+  margin-top: 5vh;
+}

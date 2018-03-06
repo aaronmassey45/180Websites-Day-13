@@ -4,7 +4,7 @@ export const REQUEST = 'REQUEST';
 export const SUCCESS = 'SUCCESS';
 export const FAILURE = 'FAILURE';
 
-export function fetchMovieData(movie) {
+export function getSearchResults(movie) {
   const URL = `https://api.themoviedb.org/3/search/movie?api_key=b7e2e61e593bea093ce49458ec65f71b&query=${movie}`;
 
   return {

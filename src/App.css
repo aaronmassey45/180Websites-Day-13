@@ -3,7 +3,7 @@
   padding: 15px;
   border-radius: 0;
 }
-.GetMovie .row {
+.SelectedMovie .row {
   overflow: auto;
   background-color: black;
   color: white;

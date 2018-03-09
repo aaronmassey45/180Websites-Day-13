@@ -15,14 +15,6 @@
   text-align: center;
 }
 
-.SearchBar input {
-  width: 80%;
-  height: 40px;
-  border: 0;
-  border-bottom: 1px solid black;
-  outline: none;
-}
-
 .title {
   font-size: 4em;
   margin-bottom: 20px;

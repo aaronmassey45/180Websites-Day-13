@@ -1,21 +1,28 @@
-import React, { Component } from 'react';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
-import Button from 'material-ui/Button';
+import React from 'react';
 
-export default class Navbar extends Component {
-	render() {
-		return (
-			<AppBar position="static">
-				<Toolbar>
-					<Typography variant="title" color="inherit" style={{flex:1}}>
-						The Aaron Massey Project
-					</Typography>
-					<Button color="inherit" href="https://medium.com/@aaronmassey45">Blog</Button>
-					<Button color="inherit" href="https://github.com/aaronmassey45">GitHub</Button>
-				</Toolbar>
-			</AppBar>
-		);
-	}
-}
+export default () => {
+  return (
+    <nav className="navbar navbar-dark bg-dark mb-5 navbar-expand-lg">
+      <span className="navbar-brand mb-0 h1">TMDb Search!</span>
+      <div className="navbar-nav text-center">
+        <a className="nav-item nav-link" href="https://aaronmassey.pro/">
+          Home
+        </a>
+        <a
+          className="nav-item nav-link"
+          target="_blank"
+          href="https://medium.com/@aaronmassey45"
+        >
+          Blog
+        </a>
+        <a
+          className="nav-item nav-link"
+          target="_blank"
+          href="https://github.com/aaronmassey45"
+        >
+          GitHub
+        </a>
+      </div>
+    </nav>
+  );
+};

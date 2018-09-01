@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Signika");
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
 .navbar {
   padding: 15px;
   border-radius: 0;
 }
+
 .SelectedMovie .row {
   overflow: auto;
-  background-color: black;
+
   color: white;
   font-family: 'Signika', sans-serif;
 }
@@ -30,11 +32,24 @@
   font-size: 1.2em;
 }
 
-.gold, .col-sm-6 .gold {
-  color: #D2B887;
+.gold,
+.col-sm-6 .gold {
+  color: #d2b887;
 }
 
 .stuff {
   padding: 10px;
   margin-top: 5vh;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar-brand {
+    margin: 0 auto;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

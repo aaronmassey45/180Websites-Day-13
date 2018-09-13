@@ -1,30 +1,27 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Navbar from './navbar';
-import SearchBar from './components/SearchBar';
-import SelectedMovie from './components/SelectedMovie';
+import { Provider } from './context';
+import Navbar from './components/Navbar';
+import HomePage from './components/HomePage';
 
 import './App.css';
 
-class App extends Component {
-	render() {
-		return (
-			<div className="App">
-				<Navbar />
-				<div className="container">
-					<SearchBar />
-					{this.props.selectedMovie.title ? (
-						<SelectedMovie selectedMovie={this.props.selectedMovie} />
-					) : null}
-				</div>
-			</div>
-		);
-	}
+export default class App extends Component {
+  render() {
+    return (
+      <Provider>
+        <Router>
+          <Fragment>
+            <Navbar />
+            <div className="container">
+              <Switch>
+                <Route exact path="/" component={HomePage} />
+              </Switch>
+            </div>
+          </Fragment>
+        </Router>
+      </Provider>
+    );
+  }
 }
-
-const mapStateToProps = state => ({
-	selectedMovie: state.movieData.selectedMovie,
-});
-
-export default connect(mapStateToProps)(App);

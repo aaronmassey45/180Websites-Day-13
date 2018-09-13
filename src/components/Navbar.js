@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => {
+const Navbar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark mb-5 navbar-expand-lg">
       <span className="navbar-brand mb-0 h1">TMDb Search!</span>
@@ -11,6 +11,7 @@ export default () => {
         <a
           className="nav-item nav-link"
           target="_blank"
+          rel="noopener noreferrer"
           href="https://medium.com/@aaronmassey45"
         >
           Blog
@@ -18,6 +19,7 @@ export default () => {
         <a
           className="nav-item nav-link"
           target="_blank"
+          rel="noopener noreferrer"
           href="https://github.com/aaronmassey45"
         >
           GitHub
@@ -26,3 +28,5 @@ export default () => {
     </nav>
   );
 };
+
+export default Navbar;

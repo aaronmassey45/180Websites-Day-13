@@ -9,14 +9,14 @@ const Movie = ({ movie }) => {
           <h5>{movie.title}</h5>
           <p className="card-text">
             <b>
-              <i className="fas fa-play" /> Released
+              <i className="far fa-calendar-alt" /> Released
             </b>
             : {movie.release_date}
             <br />
             <b>
-              <i className="fas fa-compact-disc" /> Rating
+              <i className="far fa-star" /> Rating
             </b>
-            : {movie.voter_average}
+            : {movie.vote_average * 10}%
           </p>
           <Link to={`/movies/${movie.id}`} className="btn btn-dark btn-block">
             <i className="fas fa-chevron-right" /> View Info

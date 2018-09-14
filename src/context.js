@@ -19,7 +19,19 @@ export class Provider extends Component {
     },
   };
 
-  componentDidMount = () => {};
+  componentDidMount = () => {
+    axios
+      .get(
+        `https://api.themoviedb.org/3/movie/popular?api_key=${
+          process.env.REACT_APP_API_KEY
+        }&language=en-US&page=1`
+      )
+      .then(res => {
+        const results = res.data.results.filter((movie, i) => i < 10);
+        this.setState({ results });
+      })
+      .catch(err => console.log(err));
+  };
 
   render() {
     return (

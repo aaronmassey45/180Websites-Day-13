@@ -6,6 +6,7 @@ const Context = React.createContext();
 export class Provider extends Component {
   state = {
     results: [],
+    heading: 'Top 10 Popular Movies',
     selectedMovie: {
       title: '',
       tagline: '',

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Consumer } from '../context';
 
 const HomePage = () => {
   return (
-    <React.Fragment>
-      <h1>HomePage</h1>
-    </React.Fragment>
+    <Consumer>
+      {value => {
+        console.log(value);
+        return <h1>Movies</h1>;
+      }}
+    </Consumer>
   );
 };
 

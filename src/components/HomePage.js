@@ -1,12 +1,27 @@
 import React, { Fragment } from 'react';
 import { Consumer } from '../context';
+import Spinner from './spinner/Spinner';
+import Movie from './Movie';
 
 const HomePage = () => {
   return (
     <Consumer>
-      {value => {
-        console.log(value);
-        return <h1>Movies</h1>;
+      {({ results, selectedMovie, heading }) => {
+        console.log(results);
+        if (results.length === 0) {
+          return <Spinner />;
+        } else {
+          return (
+            <Fragment>
+              <h3 className="text-center mb-4">{heading}</h3>
+              <div className="row">
+                {results.map(item => (
+                  <Movie movie={item} key={item.id} />
+                ))}
+              </div>
+            </Fragment>
+          );
+        }
       }}
     </Consumer>
   );

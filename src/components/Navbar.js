@@ -2,8 +2,8 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-dark bg-dark mb-5 navbar-expand-lg">
-      <span className="navbar-brand mb-0 h1">TMDb Search!</span>
+    <nav className="navbar navbar-dark bg-dark mb-5">
+      <span className="navbar-brand mb-0 h1 mx-auto">TMDb Search!</span>
       <div className="navbar-nav text-center">
         <a className="nav-item nav-link" href="https://aaronmassey.pro/">
           My Portfolio

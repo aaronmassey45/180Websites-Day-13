@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from './context';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
+import MovieInfo from './components/MovieInfo';
 
 import './App.css';
 
@@ -17,6 +18,7 @@ export default class App extends Component {
             <div className="container">
               <Switch>
                 <Route exact path="/" component={HomePage} />
+                <Route path="/movies/:id" component={MovieInfo} />
               </Switch>
             </div>
           </Fragment>

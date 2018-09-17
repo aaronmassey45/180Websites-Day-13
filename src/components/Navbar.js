@@ -6,7 +6,7 @@ const Navbar = () => {
       <span className="navbar-brand mb-0 h1">TMDb Search!</span>
       <div className="navbar-nav text-center">
         <a className="nav-item nav-link" href="https://aaronmassey.pro/">
-          Home
+          My Portfolio
         </a>
         <a
           className="nav-item nav-link"

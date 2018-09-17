@@ -7,7 +7,6 @@ const HomePage = () => {
   return (
     <Consumer>
       {({ results, selectedMovie, heading }) => {
-        console.log(results);
         if (results.length === 0) {
           return <Spinner />;
         } else {

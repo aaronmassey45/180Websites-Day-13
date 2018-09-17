@@ -3,21 +3,24 @@ import axios from 'axios';
 
 const Context = React.createContext();
 
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'SEARCH_MOVIES':
+      return {
+        ...state,
+        results: action.payload,
+        heading: 'Search Results',
+      };
+    default:
+      return state;
+  }
+};
+
 export class Provider extends Component {
   state = {
     results: [],
     heading: 'Top 10 Popular Movies',
-    selectedMovie: {
-      title: '',
-      tagline: '',
-      overview: '',
-      poster_path: '',
-      backdrop_path: '',
-      vote_average: '',
-      runtime: '',
-      release_date: '',
-      revenue: '',
-    },
+    dispatch: action => this.setState(state => reducer(state, action)),
   };
 
   componentDidMount = () => {

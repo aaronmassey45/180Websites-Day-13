@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
+
 import { Consumer } from '../context';
 import Spinner from './spinner/Spinner';
 import Movie from './Movie';
+import Search from './Search';
 
 const HomePage = () => {
   return (
@@ -12,6 +14,7 @@ const HomePage = () => {
         } else {
           return (
             <Fragment>
+              <Search />
               <h3 className="text-center mb-4">{heading}</h3>
               <div className="row">
                 {results.map(item => (

@@ -5,6 +5,7 @@ import { Provider } from './context';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import MovieInfo from './components/MovieInfo';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ export default class App extends Component {
                 <Route path="/movies/:id" component={MovieInfo} />
               </Switch>
             </div>
+            <Footer />
           </Fragment>
         </Router>
       </Provider>

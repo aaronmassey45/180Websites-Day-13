@@ -25,6 +25,7 @@ export default class MovieInfo extends Component {
 
   componentWillUnmount() {
     document.body.style.backgroundImage = null;
+    document.body.style.backgroundColor = 'white';
   }
 
   arrayToString = array => {
@@ -41,23 +42,24 @@ export default class MovieInfo extends Component {
 
     const IMG = 'https://image.tmdb.org/t/p/w500/';
     document.body.style.backgroundImage = `url(${IMG}${movie.backdrop_path})`;
+    document.body.style.backgroundColor = 'black';
 
     return (
-      <div className="card movie-details bg-dark text-white">
+      <div className="card movie-details bg-dark text-white mb-4">
         <div className="card-header">
           <Link to="/" className="btn btn-secondary btn-sm">
             Go Back
           </Link>
         </div>
         <div className="card-body row ">
-          <div className="col-md-4">
+          <div className="col-md-4 order-md-1 order-12">
             <img
               src={`${IMG}${movie.poster_path}`}
               alt="Movie poster"
               className="img-fluid"
             />
           </div>
-          <div className="card-text col-md backdrop">
+          <div className="card-text col-md order-md-12 order-1">
             <h1>{movie.title.toUpperCase()}</h1>
             <h4 className="text-gold">{movie.tagline}</h4>
             <div className="mb-4">{movie.overview}</div>

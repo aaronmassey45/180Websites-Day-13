@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Signika');
-
 body {
   height: 100vh;
   background-repeat: no-repeat;
@@ -10,55 +8,12 @@ body {
   opacity: 0.8;
 }
 
-.navbar {
-  padding: 15px;
-  border-radius: 0;
-}
-
-.SelectedMovie .row {
-  overflow: auto;
-
-  color: white;
-  font-family: 'Signika', sans-serif;
-}
-
-.SearchBar {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.title {
-  font-size: 4em;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.tagline {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.overview {
-  font-size: 1.2em;
-}
-
 .text-gold {
   color: #d2b887;
 }
 
-.stuff {
-  padding: 10px;
-  margin-top: 5vh;
-}
-
-@media only screen and (max-width: 500px) {
-  .navbar-brand {
-    margin: 0 auto;
-  }
-
-  .navbar-nav {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
+.navbar-nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }

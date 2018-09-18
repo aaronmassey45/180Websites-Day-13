@@ -11,17 +11,18 @@ import './App.css';
 
 export default class App extends Component {
   render() {
+    console.log(process.env);
     return (
       <Provider>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Fragment>
             <Navbar />
-            <div className="container">
+            <main className="container">
               <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/movies/:id" component={MovieInfo} />
               </Switch>
-            </div>
+            </main>
             <Footer />
           </Fragment>
         </Router>

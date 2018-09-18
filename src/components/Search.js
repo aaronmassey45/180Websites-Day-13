@@ -45,7 +45,16 @@ class Search extends Component {
               <h1 className="display-4 text-center">
                 <i className="fas fa-film" /> Search For A Movie!
               </h1>
-              <p className="lead text-center">Powered by tMDB</p>
+              <p className="lead text-center">
+                Powered by{' '}
+                <a
+                  href="https://www.themoviedb.org/?language=en-US"
+                  target="_blank"
+                  className="text-gold"
+                >
+                  tMDB
+                </a>
+              </p>
               <form onSubmit={this.findMovies.bind(this, dispatch)}>
                 <div className="form-group">
                   <input

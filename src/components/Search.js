@@ -50,6 +50,7 @@ class Search extends Component {
                 <a
                   href="https://www.themoviedb.org/?language=en-US"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gold"
                 >
                   tMDB

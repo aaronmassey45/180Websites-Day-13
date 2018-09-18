@@ -14,6 +14,7 @@ export default () => {
         <a
           href="https://www.youtube.com/watch?v=NDEt0KdDbhk"
           target="_blank"
+          rel="noopener noreferrer"
           className="text-gold"
         >
           Brad Traversy

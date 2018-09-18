@@ -11,7 +11,6 @@ import './App.css';
 
 export default class App extends Component {
   render() {
-    console.log(process.env);
     return (
       <Provider>
         <Router basename={process.env.PUBLIC_URL}>

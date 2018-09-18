@@ -1,5 +1,21 @@
+html,
+body,
+main {
+  height: 100%;
+}
+
 body {
-  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'mainContent'
+    'footerContent';
+}
+
+main {
+  grid-area: mainContent;
+}
+
+body {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -13,6 +29,6 @@ body {
 }
 
 footer {
-  left: 0;
-  bottom: 0;
+  grid-area: footerContent;
+  width: 100%;
 }

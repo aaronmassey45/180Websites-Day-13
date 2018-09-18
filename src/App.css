@@ -12,8 +12,7 @@ body {
   color: #d2b887;
 }
 
-.navbar-nav {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+footer {
+  left: 0;
+  bottom: 0;
 }
